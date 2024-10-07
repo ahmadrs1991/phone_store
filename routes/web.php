@@ -20,7 +20,7 @@ use App\Http\Controllers\WelcomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get("/", [WelcomeController::class, 'index']);
+Route::get("/", [WelcomeController::class, 'index'])->name("index");
 
 // Route::post('mobiles', [MobileController::class, 'store'])->name('mobiles.store');
 
