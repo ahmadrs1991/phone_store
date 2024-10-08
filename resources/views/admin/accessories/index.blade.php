@@ -17,7 +17,7 @@
         <div class="row">
             @foreach($accessories as $accsessory)
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm" style="border-radius: 25px; overflow: hidden; transition: transform 0.2s ease;">
+                    <div class="card shadow-sm" style="border-radius: 25px; overflow: hidden; transition: transform 0.9s ease;">
                         @if($accsessory->image)
                             <img src="{{ asset('images/accessories/' . $accsessory->image) }}" class="card-img-top" alt="{{ $accsessory->name }}" style="height: 250px; width: 100%; object-fit: cover;">
                         @else

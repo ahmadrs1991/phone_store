@@ -9,6 +9,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\WelcomeController;
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::get("/", [WelcomeController::class, 'index'])->name("index");
     Route::resource('admin/mobiles', MobileController::class);
     Route::resource('admin/accessories', AccessoryController::class);
     Route::resource('admin/categories', CategoryController::class);
+    Route::resource('admin/users', UserController::class);
     Route::get('admin/search', [ItemController::class, 'search'])->name('search');
     Route::get('admin/dashboard', [LoginController::class, 'dashIND'])->name('dashboard');
 });
